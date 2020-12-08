@@ -8,4 +8,7 @@ pub mod aoc {
         let file = File::open(filename)?;
         Ok(BufReader::new(file))
     }
+
+
+    pub type Res<A> = std::result::Result<A, Box<dyn std::error::Error>>;
 }
